@@ -1,2 +1,3 @@
 C:\Prog\tasks\Сумма нечет чисел\Сумма нечет чисел\bin\Debug\Сумма нечет чисел.exe.config
 C:\Prog\tasks\tasks\Сумма нечет чисел\Сумма нечет чисел\bin\Debug\Сумма нечет чисел.exe.config
+C:\Prog\tasks_csharp\Сумма нечет чисел\Сумма нечет чисел\bin\Debug\Сумма нечет чисел.exe.config
