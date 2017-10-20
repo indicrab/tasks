@@ -1,0 +1,6 @@
+C:\Prog\tasks_csharp\Работа с массивами\Работа с массивами\bin\Debug\Работа с массивами.exe.config
+C:\Prog\tasks_csharp\Работа с массивами\Работа с массивами\bin\Debug\Работа с массивами.exe
+C:\Prog\tasks_csharp\Работа с массивами\Работа с массивами\bin\Debug\Работа с массивами.pdb
+C:\Prog\tasks_csharp\Работа с массивами\Работа с массивами\obj\Debug\Работа с массивами.csprojResolveAssemblyReference.cache
+C:\Prog\tasks_csharp\Работа с массивами\Работа с массивами\obj\Debug\Работа с массивами.exe
+C:\Prog\tasks_csharp\Работа с массивами\Работа с массивами\obj\Debug\Работа с массивами.pdb
