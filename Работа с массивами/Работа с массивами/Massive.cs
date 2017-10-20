@@ -9,12 +9,14 @@ namespace Работа_с_массивами
     public class Massive
     {
         int[] massive;
-        public Massive(int razmer,int firstnum,int shag) //создаем массив и задаем его размер, первое значение и шаг для заполнения
+        public Massive(int razmer, int firstnum, int shag) //создаем массив и задаем его размер, первое значение и шаг для заполнения
         {
             massive = new int[razmer];
             for (int i = 0; i < razmer; i++)
-                massive[i] =firstnum+shag*i;
+                massive[i] = firstnum + shag * i;
         }
+
+
         public int Summa  //складываем элементы масива
         {
             get
@@ -39,7 +41,8 @@ namespace Работа_с_массивами
                 massive[i] = massive[i] * mnojitel;
             return massive;
         }
-        public string TooString()
+        
+        public string TooString() // массив в строку для консоли
         {
             string s = "";
             foreach (int value in massive)

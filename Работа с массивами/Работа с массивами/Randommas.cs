@@ -10,22 +10,22 @@ namespace Работа_с_массивами
 
     public class RandomMas 
     {
-        public int[] masive;
+        int[] massive;
         public RandomMas(int razmer, int min, int max) //создаем масив указаной размерности и заполняем егоо числам ив указаном диапазоне
-            
         {
-            masive = new int[razmer];
+            massive = new int[razmer];
             Random rnd = new Random();
-            for (int i = 0; i < razmer; i++)
-                masive[i] = rnd.Next(min, max);
+            for (int i = 0; i < massive.Length; i++)
+                massive[i] = rnd.Next(min, max);
         }
+
         public int Max  //находим макc и мин числа в массиве
         {
             get
             {
-                int max = masive[0];
-                for (int i = 1; i < masive.Length; i++)
-                    if (masive[i] > max) max = masive[i];
+                int max = massive[0];
+                for (int i = 1; i < massive.Length; i++)
+                    if (massive[i] > max) max = massive[i];
                 return max;
             }
         }
@@ -33,19 +33,22 @@ namespace Работа_с_массивами
         {
             get
             {
-                int min = masive[0];
-                for (int i = 1; i < masive.Length; i++)
-                    if (masive[i] < min) min = masive[i];
+                int min = massive[0];
+                for (int i = 1; i < massive.Length; i++)
+                    if (massive[i] < min) min = massive[i];
                 return min;
             }
         }
-        public string TooStringRand()
+
+        public string TooString() // массив в строку для консоли
         {
             string s = "";
-            foreach (int value in masive)
+            foreach (int value in massive)
                 s = s + value + " ";
             return s;
         }
+
+
 
 
     }

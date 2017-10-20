@@ -19,8 +19,8 @@ namespace Работа_с_массивами
             int sumaelementov = test.Summa;
             Console.WriteLine(sumaelementov);
 
-            RandomMas test2 = new RandomMas(5, 1, 20);
-            Console.WriteLine(test2.TooStringRand());
+            RandomMas test2 = new RandomMas(10, 1, 100);
+            Console.WriteLine(test2.TooString());
             Console.WriteLine(test2.Max);
             Console.WriteLine(test2.Min);
 
