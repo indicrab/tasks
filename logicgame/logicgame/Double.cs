@@ -13,7 +13,7 @@ namespace logicgame
             
         }
 
-        public int current = 1; //текущее число
+        int current = 1; //текущее число
         
         public void PlusOne()
         {
