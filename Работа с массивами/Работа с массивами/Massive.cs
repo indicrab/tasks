@@ -9,11 +9,21 @@ namespace Работа_с_массивами
     public class Massive
     {
         int[] massive;
-        public Massive(int razmer, int firstnum, int shag) //создаем массив и задаем его размер, первое значение и шаг для заполнения
+        
+        public int[] MassiveSHAG(int razmer, int firstnum, int shag) //создаем массив и задаем его размер, первое значение и шаг для заполнения
         {
             massive = new int[razmer];
             for (int i = 0; i < razmer; i++)
                 massive[i] = firstnum + shag * i;
+            return massive;
+        }
+        public int[] Massivernd(int razmer2, int min, int max) //создаем масив указаной размерности и заполняем егоо числам ив указаном диапазоне
+        {
+            massive = new int[razmer2];
+            Random rnd = new Random();
+            for (int i = 0; i < massive.Length; i++)
+                massive[i] = rnd.Next(min, max);
+            return massive;
         }
 
 
@@ -41,7 +51,27 @@ namespace Работа_с_массивами
                 massive[i] = massive[i] * mnojitel;
             return massive;
         }
-        
+        public int Max  //находим макc и мин числа в массиве
+        {
+            get
+            {
+                int max = massive[0];
+                for (int i = 1; i < massive.Length; i++)
+                    if (massive[i] > max) max = massive[i];
+                return max;
+            }
+        }
+
+        public int Min
+        {
+            get
+            {
+                int min = massive[0];
+                for (int i = 1; i < massive.Length; i++)
+                    if (massive[i] < min) min = massive[i];
+                return min;
+            }
+        }
         public string TooString() // массив в строку для консоли
         {
             string s = "";

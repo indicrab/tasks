@@ -10,7 +10,8 @@ namespace Работа_с_массивами
     {
         static void Main(string[] args)
         {
-            Massive test = new Massive(10, 3, 4);
+            Massive test = new Massive();
+            test.MassiveSHAG(10, 1, 3);
             Console.WriteLine(test.TooString());
             test.Inverse();
             Console.WriteLine(test.TooString());
@@ -18,12 +19,12 @@ namespace Работа_с_массивами
             Console.WriteLine(test.TooString());
             int sumaelementov = test.Summa;
             Console.WriteLine(sumaelementov);
-
-            RandomMas test2 = new RandomMas(10, 1, 100);
-            Console.WriteLine(test2.TooString());
-            Console.WriteLine(test2.Max);
-            Console.WriteLine(test2.Min);
-
+            test.Massivernd(10,1,5);
+            Console.WriteLine(test.TooString());
+            Console.WriteLine(test.Summa);
+            Console.WriteLine(test.Max);
+            Console.WriteLine(test.Min);
+            
             Console.ReadKey();
         }
     }
